@@ -1,12 +1,22 @@
 import React from 'react';
-import './App.scss';
+import styles from './App.module.scss';
+import Content from './Content' 
 
-const  App: React.FC = () => {
+
+const App: React.FC = () => {
+
+  
   return (
-    <div>
-      <span>This is an empty page now</span>
-    </div>
+    
+      <div className = {styles.main}>
+        <div className = {styles.mainWrapper}>
+          <div className = {styles.title}>Weather App</div>
+          < Content />
+        </div>
+      </div>
+      
+    
   );
 }
 
-export default App;
+export default App 
